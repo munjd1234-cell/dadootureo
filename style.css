@@ -1,0 +1,30 @@
+/* 기본 스타일 */
+:root { --main-blue: #0056b3; --accent-yellow: #ffcc00; --bg-light: #f4f7fa; }
+body { margin: 0; font-family: 'Pretendard', sans-serif; word-break: keep-all; color: #333; }
+ul { list-style: none; padding: 0; }
+a { text-decoration: none; color: inherit; }
+
+/* 헤더 */
+header { display: flex; justify-content: space-between; align-items: center; padding: 20px 10%; background: #fff; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.logo { font-size: 24px; font-weight: 800; color: var(--main-blue); }
+nav a { margin-left: 30px; font-weight: 500; }
+
+/* 섹션 공통 */
+section { padding: 80px 10%; text-align: center; }
+.section-title { font-size: 32px; margin-bottom: 50px; font-weight: 700; }
+.section-title span { color: var(--main-blue); }
+
+/* 메인 배너 */
+.hero { background: linear-gradient(to right, #ffffff, #eef2f7); display: flex; align-items: center; text-align: left; min-height: 500px; }
+.hero-text { flex: 1; }
+.hero-img { flex: 1; text-align: right; }
+.hero-img img { max-width: 100%; border-radius: 20px; }
+
+/* 서비스 카드 */
+.service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+.card { background: #fff; padding: 30px; border-radius: 15px; border: 1px solid #eee; transition: 0.3s; }
+.card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.card img { width: 80px; margin-bottom: 20px; }
+
+/* 푸터 */
+footer { background: #222; color: #fff; padding: 50px 10%; text-align: left; font-size: 14px; }
